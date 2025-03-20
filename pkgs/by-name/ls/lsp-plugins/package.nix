@@ -11,7 +11,7 @@
   libXrandr,
   libsndfile,
   lv2,
-  php82,
+  php,
   pkg-config,
 }:
 
@@ -38,7 +38,7 @@ stdenv.mkDerivation (finalAttrs: {
   '';
 
   nativeBuildInputs = [
-    php82
+    php
     pkg-config
   ];
 
