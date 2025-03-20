@@ -15,10 +15,6 @@
   pkg-config,
 }:
 
-let
-  php = php82;
-in
-
 stdenv.mkDerivation (finalAttrs: {
   pname = "lsp-plugins";
   version = "1.2.20";
@@ -42,7 +38,7 @@ stdenv.mkDerivation (finalAttrs: {
   '';
 
   nativeBuildInputs = [
-    php
+    php82
     pkg-config
   ];
 
